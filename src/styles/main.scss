@@ -1,8 +1,14 @@
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'page';
-@import 'header';
-@import 'top-bar';
-@import 'icon';
-@import 'menu';
-@import 'nav';
+.main {
+  background-color: #fff;
+
+  &__content {
+    display: grid;
+    row-gap: 96px;
+    padding-block: 64px;
+
+    @include on-tablet {
+      padding-block: 120px;
+      row-gap: 120px;
+    }
+  }
+}

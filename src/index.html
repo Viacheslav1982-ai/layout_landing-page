@@ -24,8 +24,12 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
-      href="./styles/main.scss"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/index.scss"
     />
     <script
       src="scripts/main.js"
@@ -34,145 +38,342 @@
   </head>
   <!-- endregion -->
   <body class="page__body">
+    <!-- #region header -->
     <header class="header">
-      <div class="top-bar">
-        <a
-          href="#"
-          class="top-bar__logo-link"
-        >
-          <img
-            src="images/header-logo-2px.png"
-            alt="Nasing logo"
-            class="top-bar__logo"
-          />
-        </a>
-
-        <div class="top-bar__icons">
-          <a
-            href="tel:+1 234 5555-55-55"
-            class="icon icon--phone"
-          ></a>
-          <a
-            href="#menu"
-            class="icon icon--menu"
-          ></a>
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a
+              href="#"
+              class="top-bar__logo-link"
+            >
+              <img
+                src="images/header-logo-2px.png"
+                alt="Nasing logo"
+                class="top-bar__logo"
+              />
+            </a>
+            <div class="top-bar__icons">
+              <a
+                href="tel:+1 234 5555-55-55"
+                class="icon icon--phone"
+              ></a>
+              <a
+                href="#menu"
+                class="icon icon--menu"
+              ></a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header-waves"></div>
+            <h1 class="header__title">
+              Bring joi back
+              <br />
+              to the everyday
+            </h1>
+          </div>
         </div>
       </div>
-      <div class="header__bottom">
-        <div class="header-waves"></div>
-
-        <h1 class="header__title">
-          Bring joi back
-          <br />
-          to the everyday
-        </h1>
-      </div>
     </header>
-
+    <!-- #region menu -->
     <aside
       class="page__menu menu"
       id="menu"
     >
-      <div class="top-bar menu__top">
-        <a
-          href="#"
-          class="top-bar__logo"
-        >
-          <img
-            src="images/header-logo.png"
-            alt="Nosing logo"
-          />
-        </a>
-        <a
-          href="#"
-          class="icon icon--close"
-        ></a>
-      </div>
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a
+            href="#"
+            class="top-bar__logo"
+          >
+            <img
+              src="images/header-logo.png"
+              alt="Nosing logo"
+            />
+          </a>
+          <a
+            href="#"
+            class="icon icon--close"
+          ></a>
+        </div>
 
-      <div class="menu__content">
-        <nav class="nav menu__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#"
-              >
-                Products
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#recommended"
-              >
-                Store
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#categories"
-              >
-                Login
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#how-to-buy"
-              >
-                Cart(0)
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#"
+                >
+                  Products
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#recommended"
+                >
+                  Store
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#categories"
+                >
+                  Login
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#how-to-buy"
+                >
+                  Cart(0)
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <a
-          href="tel:+1 234 5555-55-55"
-          class="menu__phone-number"
-        >
-          +1 234 5555-55-55
-        </a>
+          <a
+            href="tel:+1 234 5555-55-55"
+            class="menu__phone-number"
+          >
+            +1 234 5555-55-55
+          </a>
 
-        <a
-          href="tel:+1 234 5555-55-55"
-          class="menu__coll-to-order"
-        >
-          call to order
-        </a>
+          <a
+            href="tel:+1 234 5555-55-55"
+            class="menu__coll-to-order"
+          >
+            call to order
+          </a>
+        </div>
       </div>
     </aside>
 
     <main class="main">
-      <section
-        class="recommended"
-        id="recommended"
-      >
-        <h2>Recommended</h2>
-      </section>
+      <div class="container">
+        <div class="main__content">
+          <!-- #region recommended -->
+          <section
+            class="recommended"
+            id="recommended"
+          >
+            <h2 class="section-title">Recommended</h2>
 
-      <section
-        class="cotegories"
-        id="categories"
-      >
-        <h2>Browse Bose products by category</h2>
-      </section>
+            <div class="recommended__products">
+              <article class="product recommended__product">
+                <img
+                  src="images/products/Phone.png"
+                  alt="Phone fotos"
+                  class="product__photo"
+                />
+              </article>
 
-      <section
-        class="how-to-buy"
-        id="how-to-buy"
-      >
-        <h2>Why buy direct from Bose</h2>
-      </section>
+              <article class="product recommended__product">
+                <img
+                  src="images/products/Ear.png"
+                  alt="Ear fotos"
+                  class="product__photo"
+                />
+              </article>
 
-      <section
-        class="contacts"
-        id="contacts"
-      >
-        <h2>Contact us</h2>
-      </section>
+              <article class="product recommended__product">
+                <img
+                  src="images/products/Ear-stic.png"
+                  alt="Ear-stic fotos"
+                  class="product__photo"
+                />
+              </article>
+            </div>
+          </section>
+          <!-- #region categories -->
+          <section
+            class="categories"
+            id="categories"
+          >
+            <h2 class="section-title">Browse Nothing products by category</h2>
+
+            <div class="categories__wrapper">
+              <article class="category">
+                <div class="category__photos">
+                  <a
+                    href="#"
+                    class="category__link category__link--wide"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/All products/Beard.png"
+                      alt="All products"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="category__link category__link--square"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/All products/Stick.png"
+                      alt="All products"
+                    />
+                  </a>
+                </div>
+                <h3 class="category__title">All products</h3>
+              </article>
+            </div>
+
+            <div class="categories__wrapper">
+              <article class="category">
+                <div class="category__photos">
+                  <a
+                    href="#"
+                    class="category__link category__link--square"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/Audio/Speaker.png"
+                      alt="Audio"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="category__link category__link--wide"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/Audio/Speakers.png"
+                      alt="Audio"
+                    />
+                  </a>
+                </div>
+                <h3 class="category__title">Audio</h3>
+              </article>
+            </div>
+
+            <div class="categories__wrapper">
+              <article class="category">
+                <div class="category__photos">
+                  <a
+                    href="#"
+                    class="category__link category__link--wide"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/Acsessories/Phone.png"
+                      alt="Accessories"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="category__link category__link--square"
+                  >
+                    <img
+                      class="category__photo"
+                      src="images/Acsessories/Charger.png"
+                      alt="Accessories"
+                    />
+                  </a>
+                </div>
+                <h3 class="category__title">Accessories</h3>
+              </article>
+            </div>
+            <div class="category__button">
+              <button class="category__button category__button--view">
+                View all
+              </button>
+            </div>
+            <div class="category__bg">gg</div>
+          </section>
+          <!-- #region about-us -->
+          <section
+            class="about-us"
+            id="about-us"
+          >
+            <h2
+              class="about-us__title section-title section-title--aalign--left"
+            >
+              About us
+            </h2>
+            <div class="about-us__content">
+              <p>
+                We’re a London-based tech company on a mission to remove
+                barriers between people and technology.
+              </p>
+              <p>
+                To do this, we’re crafting intuitive, flawlessly connected
+                products that improve our lives without getting in the way. No
+                confusing tech-speak. No silly product names. Just artistry,
+                passion and trust. And products we’re proud to share with our
+                friends and family. Simple.
+              </p>
+              <p>Because beautiful tech shouldn’t be complicated.</p>
+            </div>
+          </section>
+          <!-- #region contact-us -->
+          <section
+            class="contacts"
+            id="contacts"
+          >
+            <h2 class="section-title">Contact us</h2>
+
+            <div class="contacts-block">
+              <form class="contacts-block__input">
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="form-field">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                  />
+                </div>
+                <button>Send</button>
+              </form>
+
+              <div class="contacts-block__inform">
+                <h4 class="contacts-block__inform contacts-block__inform--name">
+                  Phone
+                </h4>
+                <p class="contacts-block__inform contacts-block__inform--text">
+                  +1 234 5555-55-55
+                </p>
+                <h4 class="contacts-block__inform contacts-block__inform--name">
+                  Email
+                </h4>
+                <p class="contacts-block__inform contacts-block__inform--text">
+                  hello@nothing.com
+                </p>
+                <h4 class="contacts-block__inform contacts-block__inform--name">
+                  Address
+                </h4>
+                <p class="contacts-block__inform contacts-block__inform--text">
+                  400 first ave.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
-
-    <footer class="footer"></footer>
   </body>
 </html>

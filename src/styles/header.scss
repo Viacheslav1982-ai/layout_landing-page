@@ -1,13 +1,18 @@
 .header {
-  box-sizing: border-box;
-  height: 100vh;
+  // display: none !important;
+
   background-image: url(../images/header-bg.png);
   background-size: cover;
-  background-position: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // background-position: center;
+
+  &__content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__top {
     display: flex;
@@ -30,11 +35,8 @@
   &__bottom {
     padding-bottom: 40px;
 
-    @include content-padding;
-
     @include on-tablet {
       padding-bottom: 64px;
     }
   }
 }
-

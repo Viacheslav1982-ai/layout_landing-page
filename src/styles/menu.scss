@@ -17,10 +17,6 @@
     margin-bottom: 40px;
   }
 
-  &__content {
-    @include content-padding;
-  }
-
   &__phone-number {
     display: block;
     margin-bottom: 16px;
@@ -43,4 +39,3 @@
     text-decoration: none;
   }
 }
-
