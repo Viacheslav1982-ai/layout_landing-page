@@ -57,10 +57,10 @@
   &__button {
     @include page-grid;
 
-
     --columns: 1;
 
     margin-top: 40px;
+    margin-bottom: 96px;
 
     @include on-tablet {
       --columns: 1;
@@ -79,13 +79,20 @@
       line-height: 27px;
       color: #fff;
       background-color: #292929;
+      border-radius: 8px;
+      height: 56px;
       justify-content: center;
+      align-items: center;
       grid-column: 1 / -1;
+    }
+    &--view:hover{
+      color: #292929;
     }
   }
 }
 
 .category__bg {
+  // margin-top: 96px;
   height: 200px;
   background-image: url(../images/Footer/bg-footer.png);
   background-size: cover;
@@ -95,6 +102,7 @@
   }
 
   @include on-desktop {
+    width: 100%;
     height: 460px;
   }
 }

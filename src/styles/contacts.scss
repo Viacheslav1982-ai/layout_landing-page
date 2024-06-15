@@ -33,13 +33,17 @@ input:hover {
   color: #292929;
 }
 
+.message {
+  height: 148px;
+}
+
 button {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 27px;
   text-align: center;
-  color: #292929;
+  color: #f8f8fa;
   margin-bottom: 48px;
 
   @include on-tablet {
@@ -47,14 +51,20 @@ button {
   }
 }
 
-button:hover {
+button:default {
+  width: 100%;
+  height: 56px;
+  margin-top: 32px;
+  color: #292929;
   border: 2px #f0f1f4;
+  border-radius: 8px;
   background-color: #f8f8fa;
 }
 
-button:default {
+button:hover {
   color: #fff;
   background-color: #292929;
+  border-radius: 8px;
 }
 
 .contacts-block__inform--name {
